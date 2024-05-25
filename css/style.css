@@ -770,6 +770,9 @@ margin-top: 30px;
 margin-top: 50px;
 }
 
+.card-section-about{
+margin-top: 0px !Important;
+}
 .card-svg svg {
 fill: var(--primary-color);
 width: 50px;
