@@ -1,0 +1,862 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#17a2b8;
+    --secondary-color:#00394f;
+    --hover-color:#001d29;
+    --white-color:white;
+
+    --text-primary:#00394f;
+    --text-secondary:#17a2b8;
+    --text-white:white;
+    --text-color:#666666;
+
+    --border-color:#dfe3e7;
+
+    /* Font Family */
+    --primary-font: 'nunito', sans-serif;
+    --secondary-font:'Handlee', cursive;
+}
+
+
+h4{
+    color: #00394f;
+    font-family: 'Handlee', cursive;
+}
+
+h3{
+    font-family: 'handlee';
+}
+
+.custom-p{
+    font-size: 16px;
+    color:var(--text-color);
+    font-weight: 400;
+}
+
+.custom-btn{
+  margin-top: 40px;
+  background: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 50px;
+  padding: 12px 30px;
+}
+
+h1{
+    font-family: 'handlee';
+    font-weight: bold;
+}
+
+.custom-btn:hover{
+    background: var(--hover-color);
+    color: var(--white-color);
+  }
+  
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: "Nunito", sans-serif;
+}
+/* scroll bar*/
+body::-webkit-scrollbar {
+  width: 0.6em;
+}
+ 
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+/* CSS HOME PAGE Start */
+
+/* Header CSS */
+.navbar-toggler:focus {
+  box-shadow: unset;
+}
+.navbar{
+    background-color: #f8f9fa;
+  }
+
+  .teddy{
+   width: 50px;
+  }
+
+  .logo-text{
+    color: var(--text-secondary);
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  .nav-item{
+    padding-right: 20px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .nav-item .nav-link{
+    color: var(--secondary-color);
+  }
+
+  .nav-item .nav-link.active{
+    color: var(--primary-color);
+  }
+
+  .btn-header-submit{
+      background-color: var(--primary-color);
+      color:var(--text-white);
+      border-radius: 50px;
+      font-size: 16px;
+  }
+
+  .btn-header-submit:hover{
+      background-color: var(--hover-color);
+      color:var(--text-white);
+      
+  }
+
+  /* Hero Section */
+
+  .outer-hero-section{
+    background: var(--primary-color);
+
+  }
+
+  .outer-hero-text h4{
+    font-family: var(--secondary-font);
+    color:white;
+    font-size: 24px;
+    line-height: 49px;
+    font-weight: 700;
+  }
+
+  .outer-hero-text h1{
+    font-family:var(--secondary-font);
+    color:var(--text-white);
+    font-size: 72px;
+    line-height: 86px;
+    font-weight: 700;
+  }
+
+  .outer-hero-text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--text-white);
+  }
+
+  .outer-hero-text button{
+    background: var(--secondary-color);
+    border: 0px;
+    margin-top: 18px;
+    box-shadow: unset;
+    color: var(--text-white);
+    padding: 18px 50px;
+    border-radius: 50px;
+  }
+
+  .outer-hero-text button:hover{
+    background: var(--hover-color);
+  }
+
+  /* Card Section */
+
+  .card-section-container{
+
+    margin-top: 70px;
+
+  }
+
+  .icons-card{
+     width: 50px;
+  }
+
+  .background-card{
+    background-color: #f8f9fa;
+    padding: 30px 15px 15px 15px;
+    border: 1px solid  var(--border-color);
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .background-card:hover{
+    background-color: var(--hover-color);
+    border: 1px solid  var(--hover-color);
+  }
+   
+  .background-card:hover .card-content h4{
+    color:var(--text-white);
+  }
+
+  .background-card:hover .card-content p{
+    color:var(--text-white);
+  }
+
+  .background-card:hover .card-svg svg{
+    fill:var(--white-color)
+  }
+
+  .card-svg svg{
+    fill:var(--primary-color);
+  }
+
+  .card-content h4{
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color:var(--secondary-color)
+  }
+
+  .card-content p{
+    padding-top: 3px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+  }
+  .card-padding{
+    padding: 25px;
+    padding-bottom: 0px;
+  }
+
+  /*Best School For Your Kids */
+  .about-section-container{
+   margin-top: 90px;
+  }
+
+  .image-about img{
+    border-radius: 10px;
+  }
+
+  .about-content h4{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color:var(--text-secondary)
+  }
+
+  .about-content h1{
+    padding-top: 10px;
+    font-family: var(--secondary-font);
+    color:var(--secondary-color);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  .about-content p{
+    padding-top: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color:var(--text-color);
+
+  }
+
+  .about-points{
+    padding-top: 15px;
+  }
+  .about-points img{
+    border-radius: 10px;
+  }
+  
+  .about-points p{
+    padding: 0px;
+    margin: 0px;
+    color:var(--text-color);
+    padding: 9px 0px;
+    padding-left: 12px;
+  }
+
+  .about-points hr {
+  margin: 0rem 0;
+}
+
+.about-points button{
+  margin-top: 40px;
+  background: var(--primary-color);
+  color:var(--white-color);
+  border-radius:50px;
+  padding: 12px 30px;
+}
+
+.about-points button:hover{
+  background:var(--hover-color);
+  color:white;
+}
+
+.border-line{
+  position: relative;
+}
+.border-line::after {
+position: absolute;
+content: "";
+top: 10px;
+left: 150px;
+width: 60px;
+height: 2px;
+background: #17a2b8;
+}
+
+/* book-a-seat*/
+.section-title {
+position: relative;
+display: inline-block;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: #17a2b8;
+}
+
+.section-title::before {
+position: absolute;
+content: "";
+top: 10px;
+left: 125px;
+width: 60px;
+height: 2px;
+background: #17a2b8;
+}
+
+.section-title-book-seat{
+position: relative;
+display: inline-block;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: #17a2b8;
+
+}
+.section-title-book-seat::before {
+position: absolute;
+content: "";
+top: 10px;
+left: 125px;
+width: 60px;
+height: 2px;
+background: #17a2b8;
+}
+
+.book-seat-kid-title{
+font-family: "Handlee", cursive;
+font-weight: bold;
+line-height: 1.2;
+color: #00394f;
+}
+
+.list-inline i {
+padding-right: 10px;
+}
+
+.bg-secondary {
+background-color: var(--secondary-color) !important;
+}
+
+.bg-primary {
+background-color: var(--primary-color) !important;
+}
+.form-group {
+margin-bottom: 1rem;
+}
+
+.form-control{
+display: block;
+width: 100%;
+height: calc(1.5em + 0.75rem + 2px);
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: #495057;
+background-color: #fff;
+background-clip: padding-box;
+border-radius: 5px;
+transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.custom-select {
+transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.custom-select{
+display: inline-block;
+width: 100%;
+padding: 0.375rem 1.75rem 0.375rem 0.75rem;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: #495057;
+vertical-align: middle;
+background: #fff url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right 0.75rem center/8px 10px;
+border-radius: 5px;
+appearance: none;
+}
+
+.book-a-seat{
+margin-top: 60px;
+}
+
+.btn.btn-secondary {
+width: 100%;
+display: inline-block;
+background: var(--secondary-color);
+border-radius: 50px;
+padding: 10px;
+border: 1px solid var(--secondary-color);
+}
+
+/*Form Validation Book a Seat*/
+
+#nameError {
+  padding-top: 5px;
+  color: white;
+}
+
+#emailError {
+  padding-top: 5px;
+  color: white;
+}
+
+#classError {
+  padding-top: 5px;
+  color: white;
+}
+/*Form Validation Book a Seat end*/
+
+/* Classes for kids*/
+.card-title{
+font-family: "Handlee", cursive;
+font-weight: bold;
+line-height: 1.2;
+color: #00394f;
+}
+
+.border-right {
+border-right: 1px solid #dee2e6 !important;
+}
+
+.text-right {
+text-align: right !important;
+}
+
+.btn-primary {
+color: #fff;
+background-color: #17a2b8;
+border-color: #17a2b8;
+}
+.btn-primary:hover {
+color: #fff;
+background-color: var(--hover-color);
+border-color: var(--hover-color);
+}
+
+.btn{
+display: inline-block;
+font-weight: 400;
+text-align: center;
+vertical-align: middle;
+user-select: none;
+border: 1px solid transparent;
+padding: 0.375rem 0.75rem;
+font-size: 1rem;
+line-height: 1.5;
+border-radius: 30px;
+transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.section-title span {
+position: relative;
+background: #ffffff;
+z-index: 1;
+}
+
+.section-title::before {
+position: absolute;
+content: "";
+top: 10px;
+left: 0;
+width: 100%;
+height: 2px;
+background: #17a2b8;
+}
+
+.classes-for-kids{
+margin-top: 50px;
+}
+
+/* Team Section */
+.team-section{
+
+margin-top: 50px;
+
+}
+
+.team-section h1{
+color:#00394f;
+}
+
+/* Blog  Section */
+.mr-3{
+margin-right: 1rem !important;
+color: #17a2b8;
+}
+
+.text-primary {
+color: #17a2b8 !important;
+}
+
+.blog-section h1{
+   color: var(--secondary-color);
+}
+
+.pl-3 {
+padding-left: 1rem !important;
+}
+
+/* Footer*/
+.btn-block {
+display: block;
+width: 100%;
+}
+
+.footer{
+margin-top:50px!Important;
+}
+
+.btn-outline-primary {
+color: #17a2b8;
+border-color: #17a2b8;
+}
+
+.mr-2 {
+margin-right: 0.5rem !important;
+}
+
+.btn-outline-primary:hover {
+color: #fff;
+background-color: #17a2b8;
+border-color: #17a2b8;
+}
+
+/*footer*/
+
+.logo-footer svg{
+  width: 100px;
+}
+
+/* CSS HOME PAGE End */
+
+/* Breadcrumb section start */
+
+   .breadcrumb-section {
+            background-color: var(--primary-color);
+        }
+/* Breadcrumb section end */
+
+/* Gallery Page */
+div#lightbox {
+  display: flex;
+  flex-direction: column;
+}
+
+.lb-outerContainer {
+  order: 2;
+}
+
+.lb-dataContainer {
+  order: 1;
+  margin-bottom: 10px;
+}
+
+.lb-data .lb-details {
+  line-height: 1.5em !Important;
+}
+      .photo-gallery {
+          color: #313437;
+          background-color: #fff;
+      }
+
+      .photo-gallery h1 {
+         color: var(--secondary-color);
+    }
+
+    .photo-gallery span {
+         color:var(--primary-color);
+    }
+      .photo-gallery p {
+          color: #7d8285;
+      }
+
+      .photo-gallery h2 {
+          font-weight: bold;
+          margin-bottom: 40px;
+          padding-top: 40px;
+          color: inherit;
+      }
+
+      .photo-gallery .intro {
+        font-size: 16px;
+        max-width: 500px;
+        margin: 0 auto 40px;
+    }
+
+    .photo-gallery .intro p {
+        margin-bottom: 0;
+    }
+
+    .photo-gallery .photos {
+        padding-bottom: 20px;
+    }
+
+    .photo-gallery .item {
+        padding-bottom: 30px;
+    }
+
+
+      /*Tabs Style*/
+      #myTab {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 44px;
+      }
+      
+      #myTab .nav-item .nav-link.active {
+        color: white;
+        background: var(--primary-color);
+        padding: 5px 20px;
+        border: unset;
+        border-radius: 50px;
+      }
+      
+      #myTab .nav-item .nav-link {
+        color: var(--primary-color);
+        background: unset;
+        padding: 5px 20px;
+        border: 1px solid var(--primary-color);
+        border-radius: 50px;
+      }
+      
+      #myTab .nav-tabs .nav-link:hover {
+        border-color:  1px solid var(--primary-color);
+      }
+      
+      .nav-tabs {
+        border-bottom: unset;
+      }
+/* Gallery Page End */
+
+/*Contact Page */
+textarea.form-control {
+  height: auto;
+    }
+
+.form-control {
+display: block;
+width: 100%;
+padding: 0.375rem 0.75rem;
+font-size: 1rem;
+font-weight: 400;
+line-height: 1.5;
+color: #495057;
+background-color: #fff;
+background-clip: padding-box;
+border: 1px solid #ced4da;
+border-radius: 5px;
+transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.text-secondary {
+color: var(--text-white)!Important;
+}
+.contact-section h1{
+color: var(--text-primary);
+}
+#nameErrorContact {
+padding-top: 10px;
+font-size: 14px;
+}
+
+#emailErrorContact {
+padding-top: 10px;
+font-size: 14px;
+}
+
+#subjectErrorContact {
+padding-top: 10px;
+font-size: 14px;
+}
+
+#messageErrorContact {
+padding-top: 10px;
+font-size: 14px;
+}
+#successMessage {
+font-size: 14px;
+}
+
+.btn-primary:focus{
+color: white;
+background-color:var(--primary-color)!Important;
+border-color:var(--primary-color)!Important;
+box-shadow: unset;
+background: unset;
+}
+
+/*Contact Page End */
+
+
+
+@media only screen and (max-width: 768px) {
+
+    /*home page start*/
+
+.header-mob {
+
+flex-direction: row-reverse;
+}
+
+.logo-text {
+font-size: 30px;
+
+}
+.col-md-6.outer-hero-text h1 {
+font-size: 28px;
+text-align: center;
+line-height: 40px;
+}
+
+.col-md-6.outer-hero-text h1 br{
+display: none;
+}
+
+.outer-hero-text p {
+font-size: 14px;
+text-align: center;
+}
+
+.outer-hero-text h4 {
+font-size: 18px;
+line-height: 40px;
+text-align: center;
+}
+
+.col-md-6.outer-hero-text {
+padding-top: 30px;
+}
+
+.outer-hero-section {
+flex-direction: column-reverse;
+}
+
+.col-md-6.outer-hero-text button {
+font-size: 14px;
+margin: auto;
+display: block;
+margin-bottom: 45px;
+margin-top: 30px;
+}
+
+.card-section-container {
+margin-top: 50px;
+}
+
+.card-svg svg {
+fill: var(--primary-color);
+width: 50px;
+margin: auto;
+display: block;
+}
+
+.col-md-9.card-content {
+text-align: center;
+padding-top: 20px;
+}
+
+.about-content {
+padding-top: 30px;
+}
+
+.about-content h1 {
+font-size: 28px;
+line-height: 28px;
+}
+
+.about-content p {
+padding-top: 10px;
+}
+
+.row.about-points {
+flex-direction: column-reverse;
+}
+
+.about-points {
+padding-top: 10px;
+padding-bottom: 30px;
+}
+
+.about-section-container {
+margin-top: 50px;
+}
+
+.about-points img{
+
+padding-top: 40px;
+}
+
+.classes-for-kids {
+margin-top: 0px;
+}
+
+.book-a-seat {
+margin-top: 30px;
+}
+
+.book-a-seat-mob {
+flex-direction: column-reverse;
+}
+
+.team-section {
+margin-top: 0px;
+}
+
+.section-title-book-seat {
+margin-top: 25px;
+}
+
+/*home page end*/
+
+/* Gallery Page Start */
+
+.photo-gallery h2 {
+  margin-bottom: 25px;
+  padding-top: 25px;
+  font-size: 24px;
+}
+
+.nav-item {
+padding-right: 5px;
+font-size: 12px;
+font-weight: 700;
+}
+
+/* Gallery Page End */
+
+/* Footer */
+.footer {
+  margin-top: 20px!important;
+}
+/* Footer End */
+
+
+}
+
